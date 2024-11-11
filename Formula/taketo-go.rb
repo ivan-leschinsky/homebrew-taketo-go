@@ -11,7 +11,7 @@ class TaketoGo < Formula
   on_macos do
     on_intel do
       url "https://github.com/ivan-leschinsky/taketo-go/releases/download/v0.1.0/taketo-darwin-amd64", using: :nounzip
-      sha256 "e18db321e6b77be3726d08b4f27a9c69e1a652d73ef46966087826fd3ce4a83f"
+      sha256 "88c414026316decce72f482884c9bce55265b142cd01abef29fa0be0292bc167"
 
       def install
         bin.install "taketo-darwin-amd64" => "taketo-go"
@@ -19,7 +19,7 @@ class TaketoGo < Formula
     end
     on_arm do
       url "https://github.com/ivan-leschinsky/taketo-go/releases/download/v0.1.0/taketo-darwin-arm64", using: :nounzip
-      sha256 "848d4ffcac3fd1f40e1c8de7909a540575408c6a2dbe946a8be2d375f33db76d"
+      sha256 "73d52bf3ee5f26e6acab68f247f641b6d48a15d204c0415dcbd19d5687da1e93"
 
       def install
         bin.install "taketo-darwin-arm64" => "taketo-go"
@@ -31,7 +31,7 @@ class TaketoGo < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/ivan-leschinsky/taketo-go/releases/download/v0.1.0/taketo-linux-amd64", using: :nounzip
-        sha256 "b4447ba5b7d721f779ae9d02eeadade384fb965e15b75789551d25a58a7274e7"
+        sha256 "739a87c587a4f31a152d47a3ef80abdcbdbe5965d5356ef25f38fa9c050a58b5"
 
         def install
           bin.install "taketo-linux-amd64" => "taketo-go"
@@ -41,7 +41,7 @@ class TaketoGo < Formula
     on_arm do
       if !Hardware::CPU.is_64_bit?
         url "https://github.com/ivan-leschinsky/taketo-go/releases/download/v0.1.0/taketo-linux-arm", using: :nounzip
-        sha256 "31ff5424ee81ccc50dcf7d8067bdb4ea0345e16f0f238d02c386cd76d065a227"
+        sha256 "bf4487baf00e4b5e5b8234353141cc135bbaf8da8fe3386ac4279011d86b00ad"
 
         def install
           bin.install "taketo-linux-arm" => "taketo-go"
@@ -51,7 +51,7 @@ class TaketoGo < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/ivan-leschinsky/taketo-go/releases/download/v0.1.0/taketo-linux-arm64", using: :nounzip
-        sha256 "af4fc5679f5ee9c8159be91f70869ed1d9efed88878bb313236125cc25c9ce97"
+        sha256 "4158aa3a464cdb939f1fabb99a2be76da14d7d50c702ba7c53f1fed1360712db"
 
         def install
           bin.install "taketo-linux-arm64" => "taketo-go"
